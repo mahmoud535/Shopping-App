@@ -1,3 +1,4 @@
+# Shopping-App
 
 - [Kotlin]
 - [MVVM]  --> Repository --> UseCase --> ViewModel
@@ -19,4 +20,4 @@ At a high level, I have 3 layers in the project which I have implemented as pack
 These layers include:
 1. `Data Layer:` 
 2. `Domain layer:`
-3. `Presentation layer:`
+3. `Presentation layer:` 
