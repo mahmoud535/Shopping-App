@@ -124,13 +124,11 @@ class HomeFragment : Fragment() {
                     when (response) {
                         is Resource.Success -> {
                             adapter.differ.submitList (response.data)
-                            binding.homeRecyclerView.visibility = View.VISIBLE
                             Log.i("HomeFragment", "${response.data}")
-                            binding.progressBar.visibility = View.GONE
-                            binding.homeRecyclerView.visibility= View.VISIBLE
+                          showRecyclerView()
                         }
-                        is Resource.Loading -> { binding.progressBar.visibility = View.VISIBLE
-                                                 binding.homeRecyclerView.visibility= View.GONE
+                        is Resource.Loading -> {
+                            showProgressBar()
                             Log.i("HomeFragment", "Loading...") }
                         is Resource.Error -> { Log.i("HomeFragment", "${response.message}") }
                     }
@@ -145,5 +143,15 @@ class HomeFragment : Fragment() {
             val action = HomeFragmentDirections.actionHomeFragmentToProductDetailFragment(productId)
             findNavController().navigate(action)
         }
+    }
+
+    private fun showRecyclerView(){
+        binding.progressBar.visibility = View.GONE
+        binding.homeRecyclerView.visibility= View.VISIBLE
+    }
+
+    private fun showProgressBar(){
+        binding.progressBar.visibility = View.VISIBLE
+        binding.homeRecyclerView.visibility= View.GONE
     }
 }
