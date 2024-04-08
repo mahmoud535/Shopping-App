@@ -15,9 +15,7 @@ import com.example.shoppingapp.data.model.CartItem2
 import com.example.shoppingapp.data.model.ShopItem
 import com.example.shoppingapp.data.util.Utils
 import com.example.shoppingapp.presentation.viewmodel.ProductDetailViewModel
-//import com.stdev.shopit.presentation.viewmodel.ProductDetailViewModelFactory
 import dagger.hilt.android.AndroidEntryPoint
-import javax.inject.Inject
 
 @AndroidEntryPoint
 class ProductDetailFragment : Fragment() {
@@ -94,5 +92,4 @@ class ProductDetailFragment : Fragment() {
         binding.productDetailRating.text = "${shopItem.rating.rate}"
         binding.productDetailReviews.text = "${shopItem.rating.count} Reviews"
     }
-
 }

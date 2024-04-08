@@ -3,7 +3,7 @@ package com.example.shoppingapp.data.model
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-import com.example.shoppingapp.data.model.Rating
+import androidx.room.TypeConverters
 import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 

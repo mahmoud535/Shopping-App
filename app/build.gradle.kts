@@ -120,5 +120,8 @@ implementation(libs.androidx.navigation.fragment.ktx)
     implementation ("androidx.room:room-ktx:2.6.1")
 
     implementation ("com.github.bumptech.glide:glide:4.16.0")
+
+    //viewpager2 indicator
+//    implementation ("io.github.vejei.viewpagerindicator:viewpagerindicator:1.0.0-alpha.1")
 }
 

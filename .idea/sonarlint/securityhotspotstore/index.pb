@@ -137,3 +137,11 @@ Rapp/src/main/java/com/example/shoppingapp/presentation/di/adapter/AdapterModule
 Xapp/src/main/java/com/example/shoppingapp/presentation/di/datasource/DataSourceModule.kt,f\4\f4cca64aa39958ac1fc634d524810df6f5f022c0
 ‚
 Rapp/src/main/java/com/example/shoppingapp/presentation/ui/activity/MainActivity.kt,2\4\246b257387e3dc7aa5b4a5ab8ef23f0f6ccd7c17
+‚
+Rapp/src/main/java/com/example/shoppingapp/presentation/adapter/ViewPager2Images.kt,5\f\5fb48afc27b8e673348d9f8c16e2af2fdd5e896f
+e
+5app/src/main/java/com/example/shoppingapp/common/d.kt,c\d\cdb971cf078d6a96492273cb60d89f65ca3d4909
+n
+>app/src/main/java/com/example/shoppingapp/common/Converters.kt,0\b\0b0b4e94433e52e0d0f15fa1bb0894e1f15a58c5
+o
+?app/src/main/java/com/example/shoppingapp/common/Converters1.kt,6\8\68da9b85e51212640d621d9216cc5ce3df9ca3d4
