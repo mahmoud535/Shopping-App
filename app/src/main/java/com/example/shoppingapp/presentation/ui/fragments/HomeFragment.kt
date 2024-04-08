@@ -126,8 +126,12 @@ class HomeFragment : Fragment() {
                             adapter.differ.submitList (response.data)
                             binding.homeRecyclerView.visibility = View.VISIBLE
                             Log.i("HomeFragment", "${response.data}")
+                            binding.progressBar.visibility = View.GONE
+                            binding.homeRecyclerView.visibility= View.VISIBLE
                         }
-                        is Resource.Loading -> { Log.i("HomeFragment", "Loading...") }
+                        is Resource.Loading -> { binding.progressBar.visibility = View.VISIBLE
+                                                 binding.homeRecyclerView.visibility= View.GONE
+                            Log.i("HomeFragment", "Loading...") }
                         is Resource.Error -> { Log.i("HomeFragment", "${response.message}") }
                     }
                 }
